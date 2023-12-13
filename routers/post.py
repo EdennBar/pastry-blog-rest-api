@@ -28,7 +28,7 @@ def delete(id:int ,db:Session = Depends(get_db)):
 import uuid
 @router.post("/images/")
 async def create_upload_file(file: UploadFile = File(...)):
-    # Specify the destination folder
+    
     destination_folder = '/Users/edenbar/Desktop/pastryBlog/images/'
 
     
